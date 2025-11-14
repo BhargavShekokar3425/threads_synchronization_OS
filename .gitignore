@@ -1,0 +1,25 @@
+# build artifacts
+obj/
+*.o
+*.d
+kernel
+kernel.img
+*.elf
+
+# qemu / images
+*.img
+*.iso
+*.qcow2
+qemu-img-*
+
+# editor / IDE
+.vscode/
+*.swp
+*~ 
+
+# logs / core
+core
+*.log
+
+# OS-specific
+.DS_Store
