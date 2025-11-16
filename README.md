@@ -95,7 +95,7 @@ Makefile and build
     - t_threads
     - t_lock
 
-Testing and debugging tips
+Testing and debugging workplan
 - Add printk-style debugging (cprintf in kernel, printf in user programs).
 - Use qemu-nox and serial output to view test logs.
 - When debugging sleeps/wakeups, check that locks are held appropriately and wakeup targets the correct channel.
@@ -108,14 +108,3 @@ Checklist before submission
 - Tests exist for each part and pass inside xv6.
 - Makefile updated to include new sources.
 - No large binaries committed (use .gitignore).
-
-Example minimal file list to inspect/modify
-- kernel: syscall.h, syscall.c, sysproc.c, defs.h, proc.c, proc.h, barrier.c, barrier.h, Makefile
-- user: user.h, ulib.c, uspin.c (or extend ulib.c), test programs (t_waitpid.c, t_barrier.c, t_threads.c, t_lock.c)
-- top-level: README.md (this file), .gitignore
-
-Notes
-- The exact file names in your xv6 fork may differ slightly; adapt the above pointers to your tree.
-- If you plan more ambitious thread support (shared VM), document your design in a short file (e.g., DESIGN.md) included in the repo.
-
-Good luck — follow the checklist and run the tests frequently while implementing.
