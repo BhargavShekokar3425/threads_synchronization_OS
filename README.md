@@ -1,6 +1,5 @@
 # threads_synchronization_OS
 
-This README provides a concise implementation guide for the xv6 project tasks (Parts A–D). Use this as a checklist while coding and testing.
 
 Goals (high level)
 - Part A: Implement waitpid syscall — allow a process to wait for a specific child PID.
