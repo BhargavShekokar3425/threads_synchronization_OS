@@ -148,6 +148,7 @@ static int (*syscalls[])(void) = {
 [SYS_thread_create]         sys_thread_create,
 [SYS_thread_exit]           sys_thread_exit,
 [SYS_thread_join]           sys_thread_join,
+[SYS_waitpid]               sys_waitpid,
 [SYS_barrier_init]          sys_barrier_init,
 [SYS_barrier_check]         sys_barrier_check,
 //////////////// End of new addition /////////
